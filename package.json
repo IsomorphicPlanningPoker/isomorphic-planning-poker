@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "typings install",
-    "pretest": "cd shared && tsc",
-    "test": "jasmine JASMINE_CONFIG_PATH=$HOME/Proyectos/isomorphic-planning-poker/jasmine.json"
+    "pretest": "tsc -p shared",
+    "test": "jasmine JASMINE_CONFIG_PATH=jasmine.json"
   },
   "author": "",
   "license": "ISC",
