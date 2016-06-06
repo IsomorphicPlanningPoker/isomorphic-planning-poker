@@ -1,39 +1,19 @@
-/// <reference path="../../typings/index.d.ts"/>
 import { StoryService, Story } from './';
+import { Vote } from '../vote/vote.interface';
 import * as Mocks from '../utils/mocks';
 
-describe('story service:', () => {
-  it('should add a new vote', () => {
-    let afterState: Story = Object.assign({}, Mocks.story, {
-      'votes': [
-        {
-          _id: 'testvoteid',
-          player: {
-            _id: 'testplayerid',
-            name: 'testplayername'
-          },
-          vote: 1,
-          story: {
-            _id: 'teststoryid',
-            name: 'teststoryname'
-          }
-        }
-      ]
-    });
+describe('StoryService:', () => {
 
-    expect(StoryService.addVote(Mocks.story, Mocks.newVote)).toEqual(afterState);
+  it('should add a new vote', () => {
+    expect(StoryService.addVote(Mocks.story, Mocks.vote)).toEqual(Mocks.storyWithVote);
   });
 
   it('should edit an existing vote', () => {
-    let edditedVote = Object.assign({}, Mocks.newVote, { vote: 3 });
+    let editedVote: Vote = Object.assign({}, Mocks.vote, { vote: 3 });
 
-    let afterState: Story = Object.assign({}, Mocks.storyWithVote, {
-      'votes': [
-        edditedVote
-      ]
-    });
+    let afterState: Story = Object.assign({}, Mocks.storyWithVote, { votes: [ editedVote ] });
 
-    expect(StoryService.editVote(Mocks.storyWithVote, edditedVote)).toEqual(afterState);
+    expect(StoryService.editVote(Mocks.storyWithVote, editedVote)).toEqual(afterState);
   });
 
 });

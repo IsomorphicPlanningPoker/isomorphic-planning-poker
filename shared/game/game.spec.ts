@@ -1,20 +1,14 @@
-/// <reference path="../../typings/index.d.ts"/>
-import { GameService, Game } from './';
+import { GameService } from './game.service';
 import * as Mocks from '../utils/mocks';
 
-describe('game service:', () => {
-  it('should add story to game', () => {
-    let afterState: Game = Object.assign({}, Mocks.game, {
-      'stories': [
-        {
-          _id: 'teststoryid',
-          name: 'teststoryname',
-          votes: [],
-        }
-      ]
-    });
+describe('GameService:', () => {
 
-    expect(GameService.addStory(Mocks.game, Mocks.story)).toEqual(afterState);
+  it('should add a new story', () => {
+    expect(GameService.addStory(Mocks.game, Mocks.story)).toEqual(Mocks.gameWithStory);
+  });
+
+  it('should remove a story', () => {
+    expect(GameService.removeStory(Mocks.gameWithStory, Mocks.story)).toEqual(Mocks.game);
   });
 
 });
