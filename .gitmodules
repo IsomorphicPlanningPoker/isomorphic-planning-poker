@@ -1,0 +1,3 @@
+[submodule "planning-poker-ng2"]
+	path = planning-poker-ng2
+	url = git@github.com:IsomorphicPlanningPoker/planning-poker-ng2.git
