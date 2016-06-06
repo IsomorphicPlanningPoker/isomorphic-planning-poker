@@ -1,3 +1,5 @@
+/// <reference path="../../typings/index.d.ts"/>
+
 import { StoryService, Story } from './';
 import { Vote } from '../vote/vote.interface';
 import * as Mocks from '../utils/mocks';
