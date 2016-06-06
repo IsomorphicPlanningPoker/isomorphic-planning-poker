@@ -3,12 +3,12 @@ import { GameService, Game } from './';
 import * as Mocks from '../utils/mocks';
 
 describe('game service:', () => {
-  it('should create a new story', () => {
+  it('should add story to game', () => {
     let afterState: Game = Object.assign({}, Mocks.game, {
       'stories': [
         {
-          _id: '123',
-          name: 'test',
+          _id: 'teststoryid',
+          name: 'teststoryname',
           votes: [],
         }
       ]

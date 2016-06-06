@@ -1,5 +1,5 @@
 export const game = {
-  '_id': '123',
-  'name': 'test game',
+  '_id': 'testgameid',
+  'name': 'testgamename',
   'stories': []
 }
