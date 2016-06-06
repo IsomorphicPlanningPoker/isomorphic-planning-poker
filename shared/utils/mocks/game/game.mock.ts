@@ -1,5 +1,7 @@
-export const game = {
-  '_id': 'testgameid',
-  'name': 'testgamename',
-  'stories': []
-}
+import { Game } from '../../../game/game.interface';
+
+export const game: Game = {
+  _id: 'testgameid',
+  name: 'testgamename',
+  stories: []
+};

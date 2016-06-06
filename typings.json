@@ -4,6 +4,8 @@
     "immutable": "registry:npm/immutable#3.7.6+20160411060006"
   },
   "globalDependencies": {
-    "jasmine": "registry:dt/jasmine#2.2.0+20160505161446"
+    "core-js": "registry:dt/core-js#0.0.0+20160602141332",
+    "jasmine": "registry:dt/jasmine#2.2.0+20160505161446",
+    "node": "registry:dt/node#6.0.0+20160602155235"
   }
 }
