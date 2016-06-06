@@ -1,6 +1,6 @@
 import { Vote } from '../../../vote/vote.interface';
 
-export const newVote: Vote = {
+export const vote: Vote = {
   _id: 'testvoteid',
   player: {
     _id: 'testplayerid',
@@ -11,4 +11,4 @@ export const newVote: Vote = {
     _id: 'teststoryid',
     name: 'teststoryname'
   }
-}
+};
