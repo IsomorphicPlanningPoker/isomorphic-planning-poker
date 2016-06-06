@@ -1,0 +1,9 @@
+{
+  "name": "isomorphic-planning-poker",
+  "dependencies": {
+    "immutable": "registry:npm/immutable#3.7.6+20160411060006"
+  },
+  "globalDependencies": {
+    "jasmine": "registry:dt/jasmine#2.2.0+20160505161446"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "isomorphic-planning-poker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "cd shared && tsc",
+    "test": "jasmine JASMINE_CONFIG_PATH=/Users/ieltxua/Proyectos/isomorphic-planning-poker/jasmine.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "jasmine": "^2.4.1"
+  },
+  "devDependencies": {}
+}
