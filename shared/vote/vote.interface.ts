@@ -1,5 +1,5 @@
-import { Player } from './../player'
-import { Story } from './../story'
+import { Player } from './../player';
+import { Story } from './../story';
 
 export interface Vote {
   _id?: string;
