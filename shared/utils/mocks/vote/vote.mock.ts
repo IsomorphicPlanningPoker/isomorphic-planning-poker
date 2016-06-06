@@ -1,3 +1,5 @@
+/// <reference path="../../../../typings/index.d.ts"/>
+
 import { Vote } from '../../../vote/vote.interface';
 
 export const vote: Vote = {

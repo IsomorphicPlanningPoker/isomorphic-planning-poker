@@ -1,3 +1,5 @@
+/// <reference path="../../typings/index.d.ts"/>
+
 import { Game } from './game.interface';
 import { Story } from './../story/story.interface';
 

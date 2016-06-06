@@ -1,3 +1,5 @@
+/// <reference path="../../typings/index.d.ts"/>
+
 import { GameService } from './game.service';
 import * as Mocks from '../utils/mocks';
 
