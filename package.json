@@ -5,16 +5,17 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "typings install",
-    "pretest": "tsc -p shared",
+    "pretest": "rm -rf dist && tsc -p shared",
     "test": "jasmine JASMINE_CONFIG_PATH=jasmine.json"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "immutable": "^3.8.1"
+    "deep-freeze": "0.0.1",
+    "immutable": "^3.8.1",
+    "lodash": "^4.13.1"
   },
   "devDependencies": {
-    "jasmine": "^2.4.1",
-    "tslint": "^3.10.2"
+    "jasmine": "^2.4.1"
   }
 }
