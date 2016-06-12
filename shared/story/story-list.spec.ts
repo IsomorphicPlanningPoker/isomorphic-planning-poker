@@ -1,5 +1,3 @@
-/// <reference path="../../typings/index.d.ts"/>
-
 import { StoryListService } from './story-list.service';
 import * as Mocks from '../utils/mocks';
 import deepFreeze = require('deep-freeze');

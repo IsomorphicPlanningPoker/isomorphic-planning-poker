@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test-debug": "NODE_ENV=test jasmine-node-debug JASMINE_CONFIG_PATH=jasmine.json",
+    "test": "NODE_ENV=test jasmine JASMINE_CONFIG_PATH=jasmine.json",
+    "preinstall": "rm -rf dist && rm -rf typings",
     "postinstall": "typings install",
-    "pretest": "rm -rf dist && tsc -p shared",
-    "test": "jasmine JASMINE_CONFIG_PATH=jasmine.json"
+    "prebuild": "npm install",
+    "build": "tsc -p shared"
   },
   "author": "",
   "license": "ISC",
