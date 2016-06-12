@@ -1,5 +1,3 @@
-/// <reference path="../../../typings/index.d.ts"/>
-
 export * from './game/game.mock';
 export * from './game/game-with-story.mock';
 export * from './story/story.mock';

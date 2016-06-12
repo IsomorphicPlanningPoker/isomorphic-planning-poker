@@ -1,5 +1,3 @@
-/// <reference path="../../typings/index.d.ts"/>
-
 import { Story } from './story.interface';
 import { ReduxAction } from '../utils/action.interface';
 import { DEFAULT_REDUX_ACTION } from '../utils/default-action.constant';
